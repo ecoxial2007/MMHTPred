@@ -78,7 +78,7 @@ work_dir/
 │   │   ├── fold0-20240717-1510/
 │   │   │   ├── test_auc0.844113.png       # ROC curve visualization
 │   │   │   ├── test_result.json           # Prediction results for each case
-│   │   │   ├── training.log               # Testing logs
+│   │   │   ├── testing.log               # Testing logs
 
 ```
 
