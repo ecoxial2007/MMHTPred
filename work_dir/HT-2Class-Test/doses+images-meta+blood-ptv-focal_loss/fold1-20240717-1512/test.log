@@ -1,0 +1,63 @@
+INFO:root:tr_npy_path: data/npy/CT_Abd
+INFO:root:task_name: HT-2Class
+INFO:root:model_type: vit_b
+INFO:root:checkpoint: work_dir/SAM/sam_vit_b_01ec64.pth
+INFO:root:load_pretrain: True
+INFO:root:pretrain_model_path: 
+INFO:root:work_dir: ./work_dir
+INFO:root:num_epochs: 15
+INFO:root:batch_size: 8
+INFO:root:num_workers: 0
+INFO:root:weight_decay: 0.01
+INFO:root:lr: 0.0001
+INFO:root:use_wandb: False
+INFO:root:use_amp: False
+INFO:root:resume: 
+INFO:root:device: cuda:0
+INFO:root:data_root: /workspace/LARC/temp_crop
+INFO:root:mask_channels: 1
+INFO:root:dose_channels: 1
+INFO:root:num_classes: 2
+INFO:root:meta_dim: 2
+INFO:root:blood_dim: 4
+INFO:root:embed_dim: 256
+INFO:root:num_heads: 16
+INFO:root:seq_len: 48
+INFO:root:fold: 1
+INFO:root:use_blood_embedding: meta+blood
+INFO:root:use_ptv_mask: True
+INFO:root:use_bm_mask: False
+INFO:root:use_fh_mask: False
+INFO:root:use_ub_mask: False
+INFO:root:method: doses+images
+INFO:root:loss_function: focal_loss
+INFO:root:num_mask: 1
+INFO:root:model_save_path: ./work_dir/HT-2Class-Test/doses+images-meta+blood-ptv-focal_loss/fold1-20240717-1512
+INFO:root:Start Evaluation ...
+INFO:root:+----------+----------+
+| Metric   |    Value |
++==========+==========+
+| ACC      | 0.765957 |
++----------+----------+
+| SEN      | 0.62963  |
++----------+----------+
+| SPE      | 0.820896 |
++----------+----------+
+| PPV      | 0.586207 |
++----------+----------+
+| NPV      | 0.846154 |
++----------+----------+
+INFO:root:AUC:0.8220011055831952, Max Accuracy: 0.8191, Optimal Threshold: 0.5542
+INFO:root:+----------+----------+
+| Metric   |    Value |
++==========+==========+
+| ACC      | 0.765957 |
++----------+----------+
+| SEN      | 0.62963  |
++----------+----------+
+| SPE      | 0.820896 |
++----------+----------+
+| PPV      | 0.586207 |
++----------+----------+
+| NPV      | 0.846154 |
++----------+----------+
